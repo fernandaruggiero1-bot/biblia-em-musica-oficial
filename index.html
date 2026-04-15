@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>A Bíblia em Música – Dos Salmos aos Evangelhos</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS separado -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '808838285120046');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=808838285120046&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+
+  <!-- TARJA VERMELHA -->
+  <div id="barra-urgencia" style="position:sticky;top:0;z-index:9999;background:#DC2626;color:#fff;text-align:center;padding:12px 16px;font-weight:700;font-size:14px;line-height:1.4;font-family:'Montserrat',sans-serif;">
+    <span id="texto-urgencia"></span>
+  </div>
+
+  <!-- SEÇÃO 1: HERO -->
+  <section class="hero" id="hero">
+    <div class="section-inner">
+      <h1 class="hero-headline">
+        A BÍBLIA INTEIRA TRANSFORMADA EM 350 MÚSICAS — <span>MEMORIZE, ADORE E VIVA CADA VERSÍCULO.</span>
+      </h1>
+      
+      <p class="hero-subheadline">
+        Salmos, Provérbios, Cartas de Paulo e os Evangelhos em melodias poderosas. Ouça, cante e aprofunde sua fé onde estiver — sem precisar de internet.
+      </p>
+
+      <p class="hero-aviso">Após baixar todas as músicas, você poderá ouvir onde e como quiser, sem precisar de internet.</p>
+
+      <!-- 5 Players -->
+      <!-- Evangelho -->
+      <div class="box-audio">
+        <div class="eaudio" data-audio="audio/sermao-monte.mp3">
+          <div class="eaudio-main">
+            <div class="eaudio-cover-wrap"><img class="eaudio-cover" src="images/capa-audio-evangelhos.webp" alt="Capa"></div>
+            <div class="eaudio-content">
+              <h3 class="eaudio-title">Música 29 - O Sermão do Monte – parte 1 (Bem-aventuranças) - Músicas dos Envagelhos</h3>
+              <div class="eaudio-controls-line">
+                <button class="eaudio-btn eaudio-play" aria-label="Tocar">▶︎</button>
+                <div class="eaudio-progress-wrap">
+                  <input type="range" class="eaudio-progress" min="0" value="0" step="0.1">
+                  <div class="eaudio-time">
+                    <span class="eaudio-time-current">0:00</span>
+                    <span class="eaudio-time-duration">0:00</span>
+                  </div>
+                </div>
+                <button class="eaudio-btn eaudio-pause" aria-label="Pausar">❚❚</button>
+              </div>
+            </div>
+          </div>
+          <audio preload="metadata"></audio>
+        </div>
+
+        <!-- Cartas de Paulo -->
+        <div class="eaudio" data-audio="audio/carta-romanos-cap7.mp3">
+          <div class="eaudio-main">
+            <div class="eaudio-cover-wrap"><img class="eaudio-cover" src="images/capa-audio-paulo.webp" alt="Capa"></div>
+            <div class="eaudio-content">
+              <h3 class="eaudio-title">Capítulo 7 – A Luta entre a Carne e o Espírito – Carta de Paulo aos Romanos</h3>
+              <div class="eaudio-controls-line">
+                <button class="eaudio-btn eaudio-play" aria-label="Tocar">▶︎</button>
+                <div class="eaudio-progress-wrap">
+                  <input type="range" class="eaudio-progress" min="0" value="0" step="0.1">
+                  <div class="eaudio-time">
+                    <span class="eaudio-time-current">0:00</span>
+                    <span class="eaudio-time-duration">0:00</span>
+                  </div>
+                </div>
+                <button class="eaudio-btn eaudio-pause" aria-label="Pausar">❚❚</button>
+              </div>
+            </div>
+          </div>
+          <audio preload="metadata"></audio>
+        </div>
+
+        <!-- Provérbios -->
+        <div class="eaudio" data-audio="audio/proverbios-1.mp3">
+          <div class="eaudio-main">
+            <div class="eaudio-cover-wrap"><img class="eaudio-cover" src="images/capa-audio-proverbios.webp" alt="Capa"></div>
+            <div class="eaudio-content">
+              <h3 class="eaudio-title">Provérbios 1 - A Voz da Sabedoria</h3>
+              <div class="eaudio-controls-line">
+                <button class="eaudio-btn eaudio-play" aria-label="Tocar">▶︎</button>
+                <div class="eaudio-progress-wrap">
+                  <input type="range" class="eaudio-progress" min="0" value="0" step="0.1">
+                  <div class="eaudio-time">
+                    <span class="eaudio-time-current">0:00</span>
+                    <span class="eaudio-time-duration">0:00</span>
+                  </div>
+                </div>
+                <button class="eaudio-btn eaudio-pause" aria-label="Pausar">❚❚</button>
+              </div>
+            </div>
+          </div>
+          <audio preload="metadata"></audio>
+        </div>
+
+        <!-- Salmos 23 -->
+        <div class="eaudio" data-audio="audio/salmos-23.mp3">
+          <div class="eaudio-main">
+            <div class="eaudio-cover-wrap"><img class="eaudio-cover" src="images/capa-audio-salmos.webp" alt="Capa"></div>
+            <div class="eaudio-content">
+              <h3 class="eaudio-title">Ouça como ficou o Salmos 23</h3>
+              <div class="eaudio-controls-line">
+                <button class="eaudio-btn eaudio-play" aria-label="Tocar">▶︎</button>
+                <div class="eaudio-progress-wrap">
+                  <input type="range" class="eaudio-progress" min="0" value="0" step="0.1">
+                  <div class="eaudio-time">
+                    <span class="eaudio-time-current">0:00</span>
+                    <span class="eaudio-time-duration">0:00</span>
+                  </div>
+                </div>
+                <button class="eaudio-btn eaudio-pause" aria-label="Pausar">❚❚</button>
+              </div>
+            </div>
+          </div>
+          <audio preload="metadata"></audio>
+        </div>
+
+        <!-- Salmos 7 -->
+        <div class="eaudio" data-audio="audio/salmos-7.mp3">
+          <div class="eaudio-main">
+            <div class="eaudio-cover-wrap"><img class="eaudio-cover" src="images/capa-audio-salmos.webp" alt="Capa"></div>
+            <div class="eaudio-content">
+              <h3 class="eaudio-title">Ouça como ficou o Salmos 7</h3>
+              <div class="eaudio-controls-line">
+                <button class="eaudio-btn eaudio-play" aria-label="Tocar">▶︎</button>
+                <div class="eaudio-progress-wrap">
+                  <input type="range" class="eaudio-progress" min="0" value="0" step="0.1">
+                  <div class="eaudio-time">
+                    <span class="eaudio-time-current">0:00</span>
+                    <span class="eaudio-time-duration">0:00</span>
+                  </div>
+                </div>
+                <button class="eaudio-btn eaudio-pause" aria-label="Pausar">❚❚</button>
+              </div>
+            </div>
+          </div>
+          <audio preload="metadata"></audio>
+        </div>
+      </div>
+
+      <!-- Bloco Preço antes do botão -->
+      <div class="price-block">
+        <p class="price-highlight">Valor promocional exclusivo nessa página:</p>
+        <p class="price-old">De: R$ 57,00</p>
+        <p class="price-label">Por apenas:</p>
+        <p class="price-new">R$ 1,99</p>
+      </div>
+
+      <a href="#checkout" class="btn-cta btn-pulsante">CLIQUE PARA OUVIR E BAIXAR TODAS AS MÚSICAS AGORA MESMO</a>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2: PROPOSTA DE VALOR -->
+  <section class="proposta bg-alt" id="segunda">
+    <div class="section-inner text-center">
+      <p><strong class="text-gold">Músicas que transformam a leitura da Bíblia em louvor, meditação e crescimento espiritual.</strong></p>
+      <p>Durante séculos, a Palavra de Deus foi lida, estudada e recitada.</p>
+      <p>Agora, ela pode ser sentida, cantada e vivida.</p>
+      <div class="divider"></div>
+      <p>A Bíblia em Música é um projeto exclusivo que reuniu todas as letras dos Salmos, Provérbios, as Cartas de Paulo e a jornada de Jesus (Evangelhos) e transformou tudo em canções belíssimas, prontas para ouvir, adorar e aprender.</p>
+      
+      <img src="images/combo-colecao.webp" alt="A Bíblia em Música Coleções">
+      
+      <a href="#checkout" class="btn-cta btn-pulsante">Quero acessar a Bíblia em Música agora</a>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: DEPOIMENTOS -->
+  <section class="depoimentos bg-main">
+    <div class="section-inner text-center">
+      <h2>Testemunhos de Fé: Veja Como a Bíblia em Música Transforma Vidas</h2>
+      <div class="dep-grid">
+        <img src="images/depoimento-1.jpg" alt="Depoimento 1" class="dep-img">
+        <img src="images/depoimento-2.jpg" alt="Depoimento 2" class="dep-img">
+        <img src="images/depoimento-3.jpg" alt="Depoimento 3" class="dep-img">
+        <img src="images/depoimento-4.jpg" alt="Depoimento 4" class="dep-img">
+        <img src="images/depoimento-5.jpg" alt="Depoimento 5" class="dep-img">
+        <img src="images/depoimento-6.jpg" alt="Depoimento 6" class="dep-img">
+        <img src="images/depoimento-7.jpg" alt="Depoimento 7" class="dep-img">
+        <img src="images/depoimento-8.jpg" alt="Depoimento 8" class="dep-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: FUNCIONALIDADES -->
+  <section class="features bg-alt">
+    <div class="section-inner text-center">
+      <h2>Um Santuário Musical em Suas Mãos: Tenha Acesso Imediato a:</h2>
+      
+      <div class="features-grid">
+        <div class="feature-item">
+          <img src="images/icon-salmos.svg" alt="Salmos" class="feature-icon">
+          <h3>150 Salmos em Música</h3>
+          <p>O devocional perfeito para momentos de angústia, alegria e gratidão. Cada salmo foi lindamente transformado em uma música emocionante, mantendo a fidelidade das palavras de Davi.</p>
+        </div>
+        
+        <div class="feature-item">
+          <img src="images/icon-paulo.svg" alt="Paulo" class="feature-icon">
+          <h3>Todas as Cartas de Paulo em Música</h3>
+          <p>13 canções devocionais com os ensinamentos do apóstolo Paulo sobre graça, amor, conduta e a vida eterna. Letras profundas que trazem força e renovação para o seu dia.</p>
+        </div>
+        
+        <div class="feature-item">
+          <img src="images/icon-proverbios.svg" alt="Provérbios" class="feature-icon">
+          <h3>Provérbios em Música</h3>
+          <p>Os conselhos de sabedoria mais inspiradores de Salomão transformados em músicas práticas que guiam decisões diárias sobre finanças, relacionamento, caráter e disciplina.</p>
+        </div>
+
+        <div class="feature-item">
+          <img src="images/icon-evangelhos.svg" alt="Evangelhos" class="feature-icon">
+          <h3>Evangelhos em Música</h3>
+          <p>Mais de 100 músicas que percorrem a vida de Jesus — desde o anúncio a Maria até Sua gloriosa ressurreição. Você vai viver a trajetória do Mestre cantando os grandes milagres e parábolas.</p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      
+      <img src="images/icon-pin.svg" alt="Pin" style="width:48px; margin: 0 auto 16px;">
+      <h3 style="color:var(--color-gold);">Sua relação com a Bíblia nunca mais será a mesma!</h3>
+      <p style="margin-top:16px;">A Bíblia em Música <strong>é o único material que transforma as escrituras sagradas em experiências sonoras memoráveis.</strong> Um tesouro espiritual em formato de música para você, sua família, líderes e qualquer pessoa que deseja viver a Palavra de forma mais profunda e marcante.</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5: CANTE E ADORE -->
+  <section class="cante-adore">
+    <div class="section-inner">
+      <h2 style="color:var(--color-gold);">Eleve Sua Oração: Cante, Adore e Viva a Palavra!</h2>
+      <p>A Bíblia não é apenas um livro antigo!</p>
+      <p>É uma fonte viva de sabedoria, consolo e direção.</p>
+      <p>E agora, você pode experimentá-la em forma de canção...</p>
+      <p>Você vai ouvir, cantar e viver as Escrituras.</p>
+      <p>Uma jornada que começa nos Salmos e termina na ressurreição de Cristo.</p>
+      
+      <a href="#checkout" class="btn-cta btn-pulsante" style="margin-top:30px;">Quero acessar a Bíblia em Música agora</a>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6: DIFERENCIAIS -->
+  <section class="diferenciais bg-main" id="conectar">
+    <div class="section-inner text-center">
+      <h2>Descubra Uma Nova e Profunda Conexão com Deus:</h2>
+      
+      <div class="diferenciais-list text-left" style="text-align: left;">
+        <div class="dif-item">
+          <strong>Musical e inspirador:</strong>
+          <p>Canções devocionais que tocam a alma e criam um ambiente de adoração.</p>
+        </div>
+        <div class="dif-item">
+          <strong>Fiel às Escrituras:</strong>
+          <p>Todas as letras foram baseadas diretamente no texto bíblico, em forma poética e fiel.</p>
+        </div>
+        <div class="dif-item">
+          <strong>Didático e meditativo:</strong>
+          <p>Ajuda a memorizar versículos e aplicar os ensinamentos no dia a dia.</p>
+        </div>
+        <div class="dif-item">
+          <strong>Conexão profunda:</strong>
+          <p>Permite que você viva a Palavra com emoção, entendimento e fé genuína.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 7: CREDIBILIDADE / PERGAMINHO -->
+  <section class="credibilidade">
+    <div class="section-inner">
+      <p>"Cada projeto foi cuidadosamente desenvolvido com base nas Escrituras Sagradas, traduzindo a sabedoria e o amor de Deus em músicas que transformam o ambiente e tocam o coração."</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 8: IDEAL PARA QUEM -->
+  <section class="ideal bg-alt">
+    <div class="section-inner text-center">
+      <h2>Esta Jornada Espiritual é Ideal Para Você Que Deseja:</h2>
+      
+      <div class="ideal-grid">
+        <div class="ideal-item">
+          <span>✔️</span> <p style="margin:0; text-align:left; color:#fff;">Ter um devocional musical diário.</p>
+        </div>
+        <div class="ideal-item">
+          <span>✔️</span> <p style="margin:0; text-align:left; color:#fff;">Se aprofundar espiritualmente com leveza.</p>
+        </div>
+        <div class="ideal-item">
+          <span>✔️</span> <p style="margin:0; text-align:left; color:#fff;">Memorizar versículos com facilidade.</p>
+        </div>
+        <div class="ideal-item">
+          <span>✔️</span> <p style="margin:0; text-align:left; color:#fff;">Compreender melhor os ensinamentos de Jesus e dos apóstolos.</p>
+        </div>
+        <div class="ideal-item">
+          <span>✔️</span> <p style="margin:0; text-align:left; color:#fff;">Fortalecer a fé e tomar decisões com sabedoria.</p>
+        </div>
+        <div class="ideal-item">
+          <span>✔️</span> <p style="margin:0; text-align:left; color:#fff;">Criar um ambiente de adoração em casa, no trabalho ou nos momentos de oração.</p>
+        </div>
+      </div>
+
+      <a href="#checkout" class="btn-cta btn-pulsante">Quero acessar a Bíblia em Música agora</a>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 9: O QUE VAI RECEBER -->
+  <section class="receber bg-main" id="receber">
+    <div class="section-inner text-center">
+      <h2>O Tesouro Celestial Que Você Receberá Hoje:</h2>
+      
+      <div class="receber-grid">
+        <div class="receber-item text-left">
+          <img src="images/icon-colecoes.svg" class="receber-icon" alt="Coleções">
+          <p style="margin:0; color:#fff;">4 coleções completas: Salmos, Provérbios, Cartas e Evangelhos.</p>
+        </div>
+        <div class="receber-item text-left">
+          <img src="images/icon-musicas.svg" class="receber-icon" alt="Músicas">
+          <p style="margin:0; color:#fff;">351 músicas devocionais em alta qualidade (MP3).</p>
+        </div>
+        <div class="receber-item text-left">
+          <img src="images/icon-letras.svg" class="receber-icon" alt="Letras">
+          <p style="margin:0; color:#fff;">Letras poéticas e fiéis às Escrituras.</p>
+        </div>
+        <div class="receber-item text-left">
+          <img src="images/icon-pdfs.svg" class="receber-icon" alt="PDFs">
+          <p style="margin:0; color:#fff;">PDFs com acompanhamento de cada música.</p>
+        </div>
+        <div class="receber-item text-left">
+          <img src="images/icon-acesso.svg" class="receber-icon" alt="Acesso Digital">
+          <p style="margin:0; color:#fff;">Acesso digital vitalício (celular, tablet ou computador).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 10: BÔNUS -->
+  <section class="bonus bg-alt">
+    <div class="section-inner text-center">
+      <h3 style="color:var(--color-gold); font-size:20px; margin-bottom:5px;">Tem mais!</h3>
+      <h2>17 Bônus Exclusivos</h2>
+      <p>que custam mais de R$ 400,00</p>
+      
+      <div class="bonus-grid">
+        <div class="bonus-card">
+          <img src="images/bonus-guia-emocional.webp" alt="Guia Emocional">
+          <div class="bonus-info text-left">
+            <h3>Guia Emocional dos Salmos, Provérbios, Cartas de Paulo e Evangelhos</h3>
+            <p>Aprenda a aplicar as emoções contidas na Bíblia no seu contexto diário.</p>
+          </div>
+        </div>
+        <div class="bonus-card">
+          <img src="images/bonus-devocional.webp" alt="Devocional">
+          <div class="bonus-info text-left">
+            <h3>Devocional 30 Dias</h3>
+            <p>Um material passo a passo para criar o hábito diário de ouvir e orar a Palavra.</p>
+          </div>
+        </div>
+        <div class="bonus-card">
+          <img src="images/bonus-instrumentais.webp" alt="Instrumentais">
+          <div class="bonus-info text-left">
+            <h3>Versões Instrumentais para Oração e Relaxamento</h3>
+            <p>Músicas em formatos propícios para os seus momentos a sós com Deus.</p>
+          </div>
+        </div>
+        <div class="bonus-card">
+          <img src="images/bonus-guia-visual.webp" alt="Guia Visual">
+          <div class="bonus-info text-left">
+            <h3>Guia Visual Interativo dos Personagens Bíblicos</h3>
+            <p>Descubra em mapas ilustrados as trajetórias dos heróis da fé.</p>
+          </div>
+        </div>
+        <div class="bonus-card">
+          <img src="images/bonus-desafio.webp" alt="Desafio Memorização">
+          <div class="bonus-info text-left">
+            <h3>Desafio 7 Dias – Memorize a Palavra</h3>
+            <p>Técnicas exclusivas baseadas em associação musical para guardar os versículos no coração.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 11: GARANTIA -->
+  <section class="garantia bg-main">
+    <div class="section-inner text-center">
+      <img src="images/selo-garantia.webp" alt="Garantia" class="selo-garantia">
+      <h2>Garantia Incondicional</h2>
+      <p style="font-size:18px;">Você tem 7 dias para testar. Se não sentir sua fé fortalecida, devolvemos 100% do seu investimento!</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 12: CHECKOUT -->
+  <section class="checkout-section bg-alt" id="checkout" style="padding-bottom: 0px;">
+    <div class="section-inner">
+      <!-- NOVA SEÇÃO DE OFERTAS DENTRO DO CHECKOUT (CONFORME INSTRUÇÃO) -->
+      <h2 style="font-size:36px; font-weight:900; text-align:center; color:#FFFFFF; margin-bottom:32px; text-transform:uppercase; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));">
+        ESCOLHA A <span style="background: linear-gradient(135deg, #FACC15, #D4AF37); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">MELHOR OFERTA</span>
+      </h2>
+      
+      <div class="offers-container">
+        <!-- PLANO COMPLETO (DESTAQUE - PRIMEIRO) -->
+        <div style="border: 2px solid #D4AF37; border-radius: 16px; background: rgba(212, 175, 55, 0.05); backdrop-filter: blur(8px); padding: 24px; position: relative; flex: 1.2; box-shadow: 0 0 40px rgba(212, 175, 55, 0.15), inset 0 0 20px rgba(212, 175, 55, 0.05);">
+          <div style="display: flex; justify-content: center; width: 100%;">
+            <div style="background: linear-gradient(135deg, #EF4444, #B91C1C); color:#fff; font-weight:800; font-size:13px; padding:6px 18px; border-radius:99px; text-align:center; margin-bottom:16px; box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4); text-transform: uppercase;">🔥 A OFERTA MAIS QUENTE</div>
+          </div>
+          
+          <div style="font-weight: 900; text-transform: uppercase; font-size: 18px; text-align: center; margin-bottom: 20px; background: linear-gradient(135deg, #FACC15, #D4AF37); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            PLANO COMPLETO SUPREMO<br><span style="font-size:13px; color:#E2E8F0; -webkit-text-fill-color: initial; font-weight: 600;">O KIT RECOMENDADO PARA SE APROXIMAR MAIS DE DEUS</span>
+          </div>
+          
+          <img src="images/combo-principal.webp" alt="Combo Bíblia em Música" style="display:block;margin:0 auto 16px;max-width:280px;width:100%;border-radius:8px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));">
+          
+          <p style="text-decoration:line-through;color:#F87171;font-size:18px;text-align:center;margin:0; font-weight: 700;">De R$ 399,00</p>
+          <p style="color:#FACC15;font-size:14px;text-align:center;margin:4px 0 0; font-weight: 700;">Por apenas:</p>
+          <p style="color:#22C55E;font-size:46px;font-weight:900;text-align:center;margin:0 0 20px;line-height:1.1; text-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);">R$ 27,90</p>
+          
+          <ul class="offer-list" style="margin-bottom:20px;">
+            <li>✅ 150 Salmos em Música</li>
+            <li>✅ Todo o Evangelho de Jesus em 100 Músicas</li>
+            <li>✅ Todas as Cartas de Paulo em Música</li>
+            <li>✅ Todos os Provérbios em Música</li>
+            <li>✅ Guia Emocional dos Salmos</li>
+            <li>✅ Guia Emocional dos Provérbios</li>
+            <li>✅ Guia Emocional das Cartas de Paulo</li>
+            <li>✅ Guia Emocional do Evangelho</li>
+            <li>✅ Devocional 30 Dias com os Salmos</li>
+            <li>✅ Devocional 30 Dias com as Cartas de Paulo</li>
+            <li>✅ Devocional 31 Dias com os Provérbios</li>
+            <li>✅ Devocional 30 Dias com Jesus</li>
+            <li>✅ Versões Instrumentais para Oração e Relaxamento</li>
+            <li>✅ Guia Visual Interativo dos Personagens dos Salmos</li>
+            <li>✅ Guia Visual Interativo dos Personagens das Cartas de Paulo</li>
+            <li>✅ Guia Visual Interativo dos Personagens de Provérbios</li>
+            <li>✅ As Parábolas de Jesus em Imagem</li>
+            <li>✅ Desafio 7 Dias – Memorize Um Salmo por Dia</li>
+            <li>✅ Desafio 7 Dias – Viva Uma Carta por Dia</li>
+            <li>✅ Desafio 7 Dias – Memorize Um Provérbio por Dia</li>
+            <li>✅ Desafio 7 Dias – Viva Um Evangelho por Dia</li>
+            <li><strong style="color:#FACC15;">👑 Acesso Vitalício Garantido</strong></li>
+          </ul>
+          
+          <div class="offer-benefits" style="color:#E2E8F0;">
+            <span>💳 Pagamento único</span>
+            <span>🛡️ 7 dias de garantia</span>
+          </div>
+          
+          <a href="https://pay.cakto.com.br/m5bcoc4_832956" target="_blank" class="btn-pulsante" style="display:block;width:100%;padding:20px;background:linear-gradient(135deg, #22C55E 0%, #16A34A 100%);color:#fff;font-weight:900;font-size:18px;text-align:center;border-radius:14px;text-decoration:none;text-transform:uppercase; box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4); border: 1px solid #4ADE80;">
+            QUERO APROVEITAR O PLANO COMPLETO
+          </a>
+        </div>
+
+        <!-- PLANO SECUNDÁRIO (BÁSICO - SEGUNDO) -->
+        <div style="border: 1px dashed rgba(255,255,255,0.2); border-radius: 16px; background: rgba(0,0,0,0.2); padding: 24px; flex: 1.2; align-self: stretch;">
+          <div style="display: flex; justify-content: center; width: 100%;">
+            <div style="background:rgba(255,255,255,0.05);color:#94A3B8;font-weight:800;font-size:13px;padding:6px 18px;border-radius:99px;text-align:center;margin-bottom:24px; text-transform: uppercase;">Plano Básico</div>
+          </div>
+
+          <p style="text-decoration:line-through;color:#EF4444;font-size:18px;text-align:center;margin:0; opacity: 0.8; font-weight: 700;">De R$ 57,00</p>
+          <p style="color:#94A3B8;font-size:14px;text-align:center;margin:4px 0 0; font-weight: 700;">Por apenas:</p>
+          <p style="color:#F8FAFC;font-size:46px;font-weight:900;text-align:center;margin:0 0 20px; line-height:1.1;">R$ 1,99</p>
+          
+          <ul style="list-style:none;padding:0;margin:0 0 12px;font-size:16px;color:#D1D5DB; text-align: left;">
+            <li>✅ 150 Salmos em Música</li>
+            <li>✅ Acesso por apenas 2 semanas</li>
+          </ul>
+          
+          <ul style="list-style:none;padding:0;margin:0 0 20px;font-size:15px;color:#64748B; text-align: left;">
+            <li>❌ <s>Todos os bônus exclusivos</s></li>
+            <li>❌ <s>Atualizações de novas músicas da Bíblia</s></li>
+            <li>❌ <s>Acesso vitalício</s></li>
+          </ul>
+          
+          <div style="font-size:14px;color:#94A3B8;margin-bottom:20px; text-align: center; font-weight: bold;">
+            💳 Pagamento único &nbsp;🛡️ 7 dias de garantia
+          </div>
+          
+          <button id="btn-kit-basico" onclick="abrirPopup('popup1')" style="display:block;width:100%;padding:20px;background:rgba(255,255,255,0.05);color:#CBD5E1;font-weight:800;font-size:18px;text-align:center;border-radius:14px;border:1px solid rgba(255,255,255,0.1);cursor:pointer;font-family:'Montserrat',sans-serif;text-transform:uppercase; transition: background 0.2s;">
+            Quero apenas o básico
+          </button>
+        </div>
+      </div>
+      <!-- FIM SEÇÃO DE OFERTAS DENTRO DO CHECKOUT -->
+
+
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 13: EXPERIÊNCIA -->
+  <section class="experiencia bg-main">
+    <div class="section-inner">
+      <h2>Uma Experiência Divina Que Une Fé, Emoção e Sabedoria Bíblica</h2>
+      <p>A Bíblia em Música foi criada para quem busca se aproximar de Deus com leveza e profundidade.</p>
+      <p>As melodias, letras e estudos visuais foram pensados para que você entenda, memorize e viva os ensinamentos da Bíblia de forma prática.</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 14: FAQ -->
+  <section class="faq-container bg-alt">
+    <div class="section-inner text-center">
+      <span style="display:inline-block; padding: 4px 12px; background: rgba(255,255,255,0.1); border-radius:12px; font-size:12px; font-weight:bold; margin-bottom:10px;">FAQ</span>
+      <h2>Dúvidas Frequentes Sobre Sua Nova Jornada Espiritual</h2>
+      <div class="divider" style="margin: 20px 0;"></div>
+      
+      <div style="text-align:left;">
+        <details>
+          <summary>O que é a Bíblia em Música?</summary>
+          <div class="faq-content">É um devocional completo e moderno onde os textos da Bíblia foram produzidos em forma de música, facilitando sua conexão emocional e memorização da Palavra.</div>
+        </details>
+        <details>
+          <summary>O conteúdo é fiel ao texto bíblico?</summary>
+          <div class="faq-content">Sim! Todas as composições seguem fielmente os princípios e ensinamentos diretos da Bíblia em uma base teológica sólida.</div>
+        </details>
+        <details>
+          <summary>Como vou acessar as músicas depois da compra?</summary>
+          <div class="faq-content">Você receberá o acesso exclusivo à nossa plataforma diretamente no seu e-mail, de onde poderá ouvir de qualquer dispositivo.</div>
+        </details>
+        <details>
+          <summary>Preciso pagar mensalidade ou é acesso vitalício?</summary>
+          <div class="faq-content">O Plano Completo garante pagamento único e acesso vitalício à área de membros. O Plano Básico possui limitação temporária, como especificado na oferta.</div>
+        </details>
+        <details>
+          <summary>As músicas são para qual momento do dia?</summary>
+          <div class="faq-content">Para qualquer momento: devocional diário, trabalho, caminho de casa ou nos momentos de descontração com a família.</div>
+        </details>
+        <details>
+          <summary>O material é indicado para quem?</summary>
+          <div class="faq-content">Para novos cristãos, crianças, jovens e líderes espirituais. É um guia devocional indicado para todas a família!</div>
+        </details>
+        <details>
+          <summary>O que vou receber?</summary>
+          <div class="faq-content">Depende do plano escolhido, mas todos os planos fornecem as músicas devocionais baseadas na Bíblia para ouvir quando desejar.</div>
+        </details>
+        <details>
+          <summary>Posso ouvir as músicas mesmo sem internet?</summary>
+          <div class="faq-content">Sim, assim que baixar os arquivos dos conteúdos escolhidos na própria plataforma, você as escutará onde e quando quiser off-line.</div>
+        </details>
+        <details>
+          <summary>E se eu não gostar do conteúdo?</summary>
+          <div class="faq-content">Você tem uma Garantia Incondicional de 7 dias, onde assumimos total responsabilidade por sua satisfação, com um processo de devolução simples.</div>
+        </details>
+        <details>
+          <summary>Qual é a diferença entre a Bíblia em Música e outras versões devocionais?</summary>
+          <div class="faq-content">A principal diferença é a memorização de modo fácil e profundo em uma experiência emotiva poderosa, unida às belas artes visuais dos Guias em PDF, focados nos ensinamentos literais de cada versículo!</div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- POP-UPS -->
+  <!-- POP-UP 1 -->
+  <div id="popup1" class="popup-overlay">
+    <div class="popup-card">
+      <button class="popup-close" onclick="fecharPopup('popup1')" aria-label="Fechar">✕</button>
+
+      <div style="display:inline-block;background: linear-gradient(135deg, #EF4444, #B91C1C); color:#fff; font-weight:800; font-size:14px; padding:6px 18px; border-radius:99px; margin-bottom:16px; box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4); text-transform: uppercase;">
+        🎁 DESCONTO EXCLUSIVO LIBERADO!!!
+      </div>
+
+      <h3 style="font-weight:900;text-transform:uppercase;font-size:24px;margin:0 0 20px;line-height:1.4;background: linear-gradient(135deg, #FACC15, #D4AF37); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        PLANO COMPLETO SUPREMO<br><span style="font-size:14px; color:#E2E8F0; -webkit-text-fill-color: initial; font-weight: 600;">Kit recomendado para você se aproximar mais de Deus.</span>
+      </h3>
+
+      <img src="images/combo-principal.webp" alt="Plano Completo" style="display:block;width:100%;max-width:100%;object-fit:contain;margin:0 auto 20px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));">
+
+      <div style="display:flex; flex-direction:column; align-items:center; margin-bottom:20px;">
+        <span style="text-decoration:line-through;color:#F87171;font-size:18px;font-weight:700;">De R$ 27,90</span>
+        <span style="color:#22C55E;font-size:32px;font-weight:900;text-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);">Por apenas R$ 17,90</span>
+      </div>
+
+      <div style="text-align:left; font-size:15px; margin-bottom:20px; line-height:1.8;">
+        ✅ 150 Salmos em Música<br>
+        ✅ Todo o Evangelho de Jesus em 100 Músicas<br>
+        ✅ Todas as Cartas de Paulo em Música<br>
+        ✅ Todos os Provérbios em Música<br>
+        ✅ Guia Emocional dos Salmos<br>
+        ✅ Guia Emocional dos Provérbios<br>
+        ✅ Guia Emocional das Cartas de Paulo<br>
+        ✅ Guia Emocional do Evangelho<br>
+        ✅ Devocional 30 Dias com os Salmos<br>
+        ✅ Devocional 30 Dias com as Cartas de Paulo<br>
+        ✅ Devocional 31 Dias com os Provérbios<br>
+        ✅ Devocional 30 Dias com Jesus<br>
+        ✅ Versões Instrumentais para Oração e Relaxamento<br>
+        ✅ Guia Visual Interativo dos Personagens dos Salmos<br>
+        ✅ Guia Visual Interativo dos Personagens das Cartas de Paulo<br>
+        ✅ Guia Visual Interativo dos Personagens de Provérbios<br>
+        ✅ As Parábolas de Jesus em Imagem<br>
+        ✅ Desafio 7 Dias – Memorize Um Salmo por Dia<br>
+        ✅ Desafio 7 Dias – Viva Uma Carta por Dia<br>
+        ✅ Desafio 7 Dias – Memorize Um Provérbio por Dia<br>
+        ✅ Desafio 7 Dias – Viva Um Evangelho por Dia<br>
+        <strong style="color:#FACC15;">👑 Acesso Vitalício Garantido</strong>
+      </div>
+
+      <div style="font-size:14px; color:#E2E8F0; font-weight:700; margin-bottom:24px;">
+        💳 Pagamento único · 🛡️ 7 dias de garantia
+      </div>
+
+      <a href="https://pay.cakto.com.br/3aosdxd" target="_blank" class="popup-btn-green btn-pulsante" style="background:linear-gradient(135deg, #22C55E 0%, #16A34A 100%);box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4); border: 1px solid #4ADE80;">
+        QUERO APROVEITAR O PACOTE COMPLETO!!
+      </a>
+
+      <button onclick="fecharPopup('popup1');abrirPopup('popup2');" class="popup-btn-gray" style="opacity:0.8;">
+        QUERO APENAS O KIT BÁSICO
+      </button>
+    </div>
+  </div>
+
+  <!-- POP-UP 2 -->
+  <div id="popup2" class="popup-overlay" style="pointer-events:all;">
+    <div class="popup-card">
+      <div style="font-size:54px; margin-bottom:10px; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));">🛑</div>
+
+      <h3 style="font-weight:900;text-transform:uppercase;font-size:26px;margin:0 0 16px;line-height:1.4; color:#F87171;">
+        Tem certeza que quer ignorar nossa melhor oferta?
+      </h3>
+
+      <p style="font-size:18px;margin:0 0 24px;line-height:1.6; color:#E2E8F0;">
+        Leve o <strong style="color:#FACC15;">Pacote Completo</strong> agora mesmo com o desconto exclusivo e transforme sua vida espiritual para sempre, com todos os bônus inclusos!
+      </p>
+
+      <a href="https://pay.cakto.com.br/3aosdxd" target="_blank" class="popup-btn-green btn-pulsante" style="background:linear-gradient(135deg, #22C55E 0%, #16A34A 100%);box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4); border: 1px solid #4ADE80;">
+        SIM! QUERO O PACOTE COMPLETO COM DESCONTO!
+      </a>
+
+      <button onclick="fecharPopup('popup2');abrirPopup('popup3');" class="popup-btn-gray" style="opacity:0.8;">
+        QUERO APENAS O KIT BÁSICO
+      </button>
+    </div>
+  </div>
+
+  <!-- POP-UP 3 -->
+  <div id="popup3" class="popup-overlay" style="pointer-events:all;">
+    <div class="popup-card">
+      <div style="font-size:54px; margin-bottom:10px; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));">😔</div>
+
+      <h3 style="font-weight:900;text-transform:uppercase;font-size:24px;margin:0 0 16px;line-height:1.4; color:#F87171;">
+        Infelizmente o Kit Básico acabou por hoje.
+      </h3>
+
+      <p style="font-size:18px;margin:0 0 24px;line-height:1.6; color:#E2E8F0;">
+        Nossas vagas promocionais da Oferta Básica terminaram. Mas olhe o que nós preparamos... Você ainda pode levar o <strong style="color:#FACC15;">Pacote Completo Supremo com Super Desconto!</strong>
+      </p>
+
+      <img src="images/combo-principal.webp" alt="Plano Completo Combo" style="display:block;width:100%;max-width:100%;object-fit:contain;margin:0 auto 20px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));">
+
+      <div style="display:flex; flex-direction:column; align-items:center; margin-bottom:20px;">
+        <span style="text-decoration:line-through;color:#F87171;font-size:18px;font-weight:700;">De R$ 27,90</span>
+        <span style="color:#22C55E;font-size:32px;font-weight:900;text-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);">Por apenas R$ 12,97</span>
+      </div>
+
+      <div style="text-align:left; font-size:15px; margin-bottom:20px; line-height:1.8;">
+        ✅ 150 Salmos em Música<br>
+        ✅ Todo o Evangelho de Jesus em 100 Músicas<br>
+        ✅ Todas as Cartas de Paulo em Música<br>
+        ✅ Todos os Provérbios em Música<br>
+        ✅ Guia Emocional dos Salmos<br>
+        ✅ Guia Emocional dos Provérbios<br>
+        ✅ Guia Emocional das Cartas de Paulo<br>
+        ✅ Guia Emocional do Evangelho<br>
+        ✅ Devocional 30 Dias com os Salmos<br>
+        ✅ Devocional 30 Dias com as Cartas de Paulo<br>
+        ✅ Devocional 31 Dias com os Provérbios<br>
+        ✅ Devocional 30 Dias com Jesus<br>
+        ✅ Versões Instrumentais para Oração e Relaxamento<br>
+        ✅ Guia Visual Interativo dos Personagens dos Salmos<br>
+        ✅ Guia Visual Interativo dos Personagens das Cartas de Paulo<br>
+        ✅ Guia Visual Interativo dos Personagens de Provérbios<br>
+        ✅ As Parábolas de Jesus em Imagem<br>
+        ✅ Desafio 7 Dias – Memorize Um Salmo por Dia<br>
+        ✅ Desafio 7 Dias – Viva Uma Carta por Dia<br>
+        ✅ Desafio 7 Dias – Memorize Um Provérbio por Dia<br>
+        ✅ Desafio 7 Dias – Viva Um Evangelho por Dia<br>
+        <strong style="color:#FACC15;">👑 Acesso Vitalício Garantido</strong>
+      </div>
+
+      <div style="font-size:14px; color:#E2E8F0; font-weight:700; margin-bottom:24px;">
+        💳 Pagamento único · 🛡️ 7 dias de garantia
+      </div>
+
+      <a href="https://pay.cakto.com.br/kwhmu5n" target="_blank" class="popup-btn-green btn-pulsante" style="margin-bottom:0; background:linear-gradient(135deg, #22C55E 0%, #16A34A 100%);box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4); border: 1px solid #4ADE80;">
+        SIM! EU ACEITO ESSE DESCONTO LOUCO!
+      </a>
+    </div>
+  </div>
+
+
+  <!-- SCRIPT LÓGICA FINAL -->
+  <script>
+    // 1. Tarja de urgência
+    (function() {
+      var diasSemana = ['domingo','segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado'];
+      var meses = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+      var hoje = new Date();
+      var diaSemana = diasSemana[hoje.getDay()];
+      var dia = hoje.getDate();
+      var mes = meses[hoje.getMonth()];
+      var ano = hoje.getFullYear();
+      var texto = 'Hoje, ' + diaSemana + ', ' + dia + ' de ' + mes + ' de ' + ano + ' é o último dia para aproveitar o desconto de 60%.';
+      document.getElementById('texto-urgencia').textContent = texto;
+      
+      var checkoutData = document.getElementById('data-checkout');
+      if(checkoutData) checkoutData.textContent = dia + ' de ' + mes;
+    })();
+
+    // 2. Funções de Pop-up
+    function abrirPopup(id) {
+      document.querySelectorAll('.popup-overlay').forEach(function(p) { p.style.display = 'none'; });
+      var el = document.getElementById(id);
+      if(el) {
+        el.style.display = 'flex';
+      }
+    }
+
+    function fecharPopup(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    // 3. Lógica dos players de áudio (original adaptada para os elementos nativos)
+    (function () {
+      const players = document.querySelectorAll('.eaudio');
+      if (!players.length) return;
+
+      players.forEach(initPlayer);
+
+      function initPlayer(root) {
+        if (root.dataset.initialized) return;
+        root.dataset.initialized = "true";
+
+        const audio   = root.querySelector('audio');
+        const playBtn = root.querySelector('.eaudio-play');
+        const pauseBtn = root.querySelector('.eaudio-pause');
+        const progress = root.querySelector('.eaudio-progress');
+        const currentEl = root.querySelector('.eaudio-time-current');
+        const durationEl = root.querySelector('.eaudio-time-duration');
+
+        // Dados
+        if (root.dataset.audio) audio.src = root.dataset.audio;
+
+        // Formatação
+        const format = sec => {
+          sec = Math.floor(sec || 0);
+          const m = Math.floor(sec / 60);
+          const s = sec % 60;
+          return m + ':' + String(s).padStart(2, '0');
+        };
+
+        // Metadados
+        audio.addEventListener('loadedmetadata', () => {
+          durationEl.textContent = format(audio.duration);
+          progress.max = audio.duration;
+        });
+
+        // Atualizar barra
+        audio.addEventListener('timeupdate', () => {
+          progress.value = audio.currentTime;
+          currentEl.textContent = format(audio.currentTime);
+        });
+
+        // Play
+        playBtn.addEventListener('click', () => {
+          pauseOthers(audio);
+          audio.play();
+          playBtn.style.display = 'none';
+          pauseBtn.style.display = 'flex';
+        });
+
+        // Pause
+        pauseBtn.style.display = 'none'; // hide pause initially
+        pauseBtn.addEventListener('click', () => {
+          audio.pause();
+        });
+
+        audio.addEventListener('pause', () => {
+           playBtn.style.display = 'flex';
+           pauseBtn.style.display = 'none';
+        });
+
+        // Controle manual da barra
+        progress.addEventListener('input', () => {
+          audio.currentTime = progress.value;
+        });
+      }
+
+      function pauseOthers(current) {
+        document.querySelectorAll('.eaudio audio').forEach(a => {
+          if (a !== current) a.pause();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
