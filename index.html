@@ -813,5 +813,335 @@
       }
     })();
   </script>
+
+  <!-- ============ INÍCIO BLOCO PROVA SOCIAL — ISOLADO ============ -->
+  <div id="psn-root" aria-live="polite" role="status"></div>
+  <style>
+    #psn-root {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 2147483000;
+      pointer-events: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    #psn-root, #psn-root * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    @media (max-width: 480px) {
+      #psn-root {
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    #psn-root .psn-toast {
+      pointer-events: auto;
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      color: #ffffff;
+      width: 100%;
+      max-width: 360px;
+      min-width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18), 0 4px 10px rgba(0, 0, 0, 0.12);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: opacity 400ms cubic-bezier(0.16, 1, 0.3, 1), transform 400ms cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #psn-root .psn-toast {
+        transition: opacity 400ms ease-in-out;
+        transform: none !important;
+      }
+    }
+    #psn-root .psn-toast.psn-show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    #psn-root .psn-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #psn-root .psn-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: #ffffff;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    #psn-root .psn-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding-right: 20px;
+    }
+    #psn-root .psn-title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #ffffff;
+    }
+    #psn-root .psn-text {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.3;
+      color: #ffffff;
+    }
+    #psn-root .psn-time {
+      font-size: 12px;
+      font-weight: 400;
+      opacity: 0.85;
+      color: #ffffff;
+      margin-top: 2px;
+    }
+    #psn-root .psn-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      padding: 4px;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 200ms ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #psn-root .psn-close:hover {
+      opacity: 1;
+    }
+    #psn-root .psn-close svg {
+      width: 12px;
+      height: 12px;
+      fill: none;
+      stroke: #ffffff;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  </style>
+  <script>
+    (function () {
+      'use strict';
+
+      if (window.__PSN__) return;
+
+      const COMPRAS = [
+        { nome: "Iolanda", cidade: "Brasília", uf: "DF" },
+        { nome: "Marcos",  cidade: "São Paulo", uf: "SP" },
+        { nome: "Ana",     cidade: "Recife",   uf: "PE" },
+        { nome: "João",    cidade: "Belo Horizonte", uf: "MG" },
+        { nome: "Carla",   cidade: "Salvador", uf: "BA" },
+        { nome: "Pedro",   cidade: "Curitiba", uf: "PR" },
+        { nome: "Beatriz", cidade: "Fortaleza", uf: "CE" },
+        { nome: "Rafael",  cidade: "Porto Alegre", uf: "RS" },
+        { nome: "Juliana", cidade: "Manaus",   uf: "AM" },
+        { nome: "Tiago",   cidade: "Goiânia",  uf: "GO" },
+        { nome: "Fernanda",cidade: "Campinas", uf: "SP" },
+        { nome: "Lucas",   cidade: "Florianópolis",uf: "SC" },
+        { nome: "Mariana", cidade: "Vitória",  uf: "ES" },
+        { nome: "Diego",   cidade: "Natal",    uf: "RN" },
+        { nome: "Camila",  cidade: "Belém",    uf: "PA" },
+        { nome: "Bruno",   cidade: "João Pessoa", uf: "PB" },
+        { nome: "Aline",   cidade: "Maceió",   uf: "AL" },
+        { nome: "Felipe",  cidade: "Cuiabá",   uf: "MT" },
+        { nome: "Larissa", cidade: "Campo Grande",uf: "MS" },
+        { nome: "Roberto", cidade: "Aracaju",  uf: "SE" },
+        { nome: "Letícia", cidade: "Teresina", uf: "PI" },
+        { nome: "Sandra",  cidade: "São Luís", uf: "MA" },
+        { nome: "Rodrigo", cidade: "Londrina", uf: "PR" },
+        { nome: "Tânia",   cidade: "Joinville", uf: "SC" },
+        { nome: "Márcio",  cidade: "Ribeirão Preto", uf: "SP" },
+        { nome: "Cláudia", cidade: "Niterói", uf: "RJ" },
+        { nome: "Otávio",  cidade: "Caxias do Sul", uf: "RS" },
+        { nome: "Lívia",   cidade: "Uberlândia", uf: "MG" },
+        { nome: "Renato",  cidade: "Vila Velha", uf: "ES" },
+        { nome: "Cíntia",  cidade: "Sorocaba", uf: "SP" },
+        { nome: "Gustavo", cidade: "São José dos Campos", uf: "SP" },
+        { nome: "Helena",  cidade: "João Pessoa", uf: "PB" },
+        { nome: "Samuel",  cidade: "Maringá", uf: "PR" },
+        { nome: "Raquel",  cidade: "Macapá", uf: "AP" },
+        { nome: "Anderson",cidade: "Porto Velho", uf: "RO" },
+        { nome: "Simone",  cidade: "Blumenau", uf: "SC" },
+        { nome: "Thiago",  cidade: "Cascavel", uf: "PR" },
+        { nome: "Jéssica", cidade: "Contagem", uf: "MG" },
+        { nome: "Vitor",   cidade: "Campina Grande", uf: "PB" },
+        { nome: "Eliane",  cidade: "Pelotas", uf: "RS" },
+        { nome: "Ricardo", cidade: "Canoas", uf: "RS" },
+        { nome: "Márcia",  cidade: "Franca", uf: "SP" },
+        { nome: "Igor",    cidade: "Petrolina", uf: "PE" },
+        { nome: "Patrícia",cidade: "Bauru", uf: "SP" }
+      ];
+
+      const PRODUTOS = ["os Salmos"];
+
+      const TEMPOS = [
+        "agora mesmo",
+        "há 1 minuto",
+        "há 2 minutos",
+        "há 3 minutos",
+        "há 5 minutos",
+        "há 7 minutos",
+        "há 10 minutos",
+        "há 14 minutos"
+      ];
+
+      let root = null;
+      let timerId = null;
+      let activeToast = null;
+      let isDestroyed = false;
+      let availableCompras = [];
+
+      function getRandomItem(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+      }
+
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function getUniquePessoa() {
+        // Se esgotarmos os nomes, reabastecemos e embaralhamos
+        if (availableCompras.length === 0) {
+          availableCompras = [...COMPRAS].sort(() => Math.random() - 0.5);
+        }
+        return availableCompras.pop();
+      }
+
+      function buildToastDOM() {
+        const pessoa = getUniquePessoa();
+        const produto = getRandomItem(PRODUTOS);
+        const tempo = getRandomItem(TEMPOS);
+
+        const toast = document.createElement('div');
+        toast.className = 'psn-toast';
+        toast.innerHTML = `
+          <div class="psn-icon">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <div class="psn-content">
+            <p class="psn-title">Compra confirmada</p>
+            <p class="psn-text">${pessoa.nome}, de ${pessoa.cidade}, ${pessoa.uf}<br>acabou de adquirir ${produto}</p>
+            <p class="psn-time">${tempo}</p>
+          </div>
+          <button class="psn-close" aria-label="Fechar notificação">
+            <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        `;
+
+        toast.querySelector('.psn-close').addEventListener('click', closeToast);
+        return toast;
+      }
+
+      function showToast() {
+        if (isDestroyed || document.visibilityState === 'hidden' || window.innerWidth < 320) {
+          scheduleNext();
+          return;
+        }
+
+        root.innerHTML = '';
+        activeToast = buildToastDOM();
+        root.appendChild(activeToast);
+
+        void activeToast.offsetWidth;
+        activeToast.classList.add('psn-show');
+
+        const visibleTime = getRandomInt(4500, 6500); // Fica de 4,5s a 6,5s exibido
+        timerId = setTimeout(closeToast, visibleTime);
+      }
+
+      function closeToast() {
+        if (!activeToast) return;
+        clearTimeout(timerId);
+        
+        const toastToRemove = activeToast;
+        activeToast = null;
+        
+        toastToRemove.classList.remove('psn-show');
+        
+        setTimeout(() => {
+          if (root && root.contains(toastToRemove)) {
+            root.removeChild(toastToRemove);
+          }
+          scheduleNext();
+        }, 400); 
+      }
+
+      function scheduleNext() {
+        if (isDestroyed) return;
+        // Intervalos curtos: entre 3 e 8 segundos (Sensação de muitas vendas em tempo real!)
+        const intervalTime = getRandomInt(3000, 8000);
+        timerId = setTimeout(() => {
+          if (!activeToast) showToast();
+        }, intervalTime);
+      }
+
+      function handleVisibilityChange() {
+        if (document.visibilityState === 'visible') {
+          if (activeToast && !timerId) {
+            // Se o usuário voltou pra aba com a notificação ainda na tela, fechamos logo em seguida
+            timerId = setTimeout(closeToast, 2000);
+          } else if (!activeToast && !timerId) {
+            // Se não tinha notificação na tela, agenda a próxima
+            scheduleNext();
+          }
+        } else {
+          // Aba oculta, paralisa contador
+          clearTimeout(timerId);
+          timerId = null;
+        }
+      }
+
+      function init() {
+        root = document.getElementById('psn-root');
+        if (!root) return;
+
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+
+        // A primeira aparece após 4 a 8 segundos da página carregar (pra não ser instantâneo fake nem demorar demais)
+        const initialDelay = getRandomInt(4000, 8000);
+        timerId = setTimeout(showToast, initialDelay);
+
+        window.__PSN__ = {
+          destroy: function() {
+            isDestroyed = true;
+            clearTimeout(timerId);
+            document.removeEventListener('visibilitychange', handleVisibilityChange);
+            if (root) {
+              root.remove();
+              root = null;
+            }
+            delete window.__PSN__;
+          }
+        };
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 </body>
 </html>
